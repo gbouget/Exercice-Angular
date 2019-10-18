@@ -1,5 +1,5 @@
-# ExerciceBlog
-* git clone https://github.com/gbouget/Exercice-Angular.git
-* cd Exercice-Angular
-* npm install
-* ng serve --open
+# Démarrage
+1. `git clone https://github.com/gbouget/Exercice-Angular.git`
+2. `cd Exercice-Angular`
+3. `npm install`
+4. `ng serve --open`
