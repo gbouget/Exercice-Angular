@@ -1,0 +1,13 @@
+<div class="jumbotron" [ngClass]="{
+	'bg-success': loveIts > 0,
+	'bg-danger': loveIts < 0
+}">
+  <h2 class="display-4">{{ title }}</h2>
+  <p class="lead">{{ created_at | date: 'd MMMM yyyy, H:mm': undefined : 'fr' }}</p>
+  <hr class="my-4" />
+	<p>	{{ content }}</p>
+	<div class="btn-group" role="group">
+		<button type="button" class="btn btn-secondary" (click)="ajouterLike(1)"><fa-icon [icon]="faThumbsUp"></fa-icon> J'aime</button>
+		<button type="button" class="btn btn-secondary" (click)="ajouterLike(-1)"><fa-icon [icon]="faThumbsDown"></fa-icon> Je n'aime pas</button>
+	</div>
+</div>
