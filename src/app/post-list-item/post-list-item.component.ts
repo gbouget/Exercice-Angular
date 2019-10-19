@@ -11,10 +11,7 @@ export class PostListItem implements OnInit {
 	faThumbsUp = faThumbsUp;
 	faThumbsDown = faThumbsDown;
 
-  @Input() title: string;
-  @Input() content: string;
-  @Input() loveIts: number;
-  @Input() created_at: Date;
+  @Input() post;
 
   constructor() {}
 
@@ -22,6 +19,6 @@ export class PostListItem implements OnInit {
   }
 
   ajouterLike(nombre) {
-	  this.loveIts = this.loveIts + nombre;
+	  this.post.loveIts = this.post.loveIts + nombre;
   }
 }
