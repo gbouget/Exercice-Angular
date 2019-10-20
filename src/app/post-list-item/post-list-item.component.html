@@ -3,7 +3,7 @@
 	'bg-danger': post.loveIts < 0
 }">
   <h2 class="display-4">{{ post.title }}</h2>
-  <p class="lead">{{ post.created_at | date: 'd MMMM yyyy, H:mm': undefined : 'fr' }}</p>
+  <p class="lead">{{ post.createdAt | date: 'd MMMM yyyy, H:mm': undefined : 'fr' }}</p>
   <hr class="my-4" />
 	<p>	{{ post.content }}</p>
 	<div class="btn-group" role="group">
